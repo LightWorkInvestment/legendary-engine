@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote - Light Work Investment CC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-flex">
+    <img src="logo.png" alt="Light Work Investment Logo" class="logo-small">
+    <h1>Light Work Investment CC</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cleaning.html">Cleaning</a>
+      <a href="construction.html">Construction</a>
+      <a href="delivery.html">Delivery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="contact-section">
+  <div class="contact-container">
+    <img src="logo.png" alt="Logo" class="form-logo">
+    <h2>Request a Quote</h2>
+    <p>Fill out the form below and our team will get back to you as soon as possible.</p>
+    <form action="https://formspree.io/f/mgolzrok" method="POST">
+      <label>
+        Full Name:
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Phone:
+        <input type="text" name="phone">
+      </label>
+      <label>
+        Service Required:
+        <select name="service" required>
+          <option value="Cleaning">Cleaning</option>
+          <option value="Construction">Construction</option>
+          <option value="Delivery">Delivery</option>
+        </select>
+      </label>
+      <label>
+        Message:
+        <textarea name="message" rows="5"></textarea>
+      </label>
+      <button type="submit">Send Request</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 Light Work Investment CC. All Rights Reserved.
+</footer>
+
+</body>
+</html>

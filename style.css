@@ -1,0 +1,726 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+header {
+  background: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: gold;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+.logo {
+  height: 60px;
+}
+
+/* HERO */
+.hero {
+  background: black;
+  color: gold;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: white;
+}
+
+/* WHY CHOOSE US */
+.why-choose {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.why-choose ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose li {
+  margin: 10px 0;
+}
+
+/* SERVICES PREVIEW */
+.services-preview {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.card a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta {
+  background: gold;
+  color: black;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* CONTACT FORM UPGRADE */
+.contact-section {
+  padding: 60px 20px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid gold;
+}
+
+.contact-container h2 {
+  color: gold;
+  margin-bottom: 15px;
+}
+
+.contact-container p {
+  margin-bottom: 25px;
+}
+
+.contact-container .form-logo {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.contact-container label {
+  display: block;
+  text-align: left;
+  margin-bottom: 15px;
+  color: #eee;
+}
+
+.contact-container input,
+.contact-container select,
+.contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+  background: #222;
+  color: #eee;
+}
+
+.contact-container button {
+  padding: 12px 25px;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-container button:hover {
+  background: white;
+  color: black;
+}
+
+footer {
+  background: black;
+  color: gold;
+  text-align: center;
+  padding: 20px;
+}
+/* Logos */
+.logo-home {
+  height: 120px;  /* Bigger logo for homepage */
+}
+
+.logo-small {
+  height: 60px;   /* Smaller logo for other pages */
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+header h1 {
+  font-size: 26px;
+  color: gold;
+}
+
+/* Hero section for homepage with full logo */
+.hero-home {
+  background: black;
+  color: gold;
+  height: 90vh; /* almost full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.hero-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-home-full {
+  max-width: 400px; /* adjust size */
+  width: 80%;
+  height: auto;
+}
+
+.hero-home h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.hero-home p {
+  font-size: 20px;
+  max-width: 800px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+/* Hero section for homepage with logo covering ~1/4 of the page */
+.hero-home {
+  background: black;
+  color: gold;
+  height: 50vh; /* about half of the visible page */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.hero-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-home-quarter {
+  max-height: 25vh; /* logo height covers ~1/4 of page */
+  width: auto;
+}
+
+.hero-home h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-home p {
+  font-size: 18px;
+  max-width: 700px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+.hero-home {
+  background: black;
+  color: gold;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.hero-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-home-quarter {
+  max-height: 25vh;
+  width: auto;
+}
+
+.hero-home h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-home p {
+  font-size: 18px;
+  max-width: 700px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+.hero-home {
+  background: black;
+  color: gold;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.hero-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-home-quarter {
+  max-height: 25vh; /* roughly a quarter of the page */
+  width: auto;
+}
+
+.hero-home h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-home p {
+  font-size: 16px;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.btn {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+/* HEADER HOMEPAGE */
+.header-container-home {
+  display: flex;
+  flex-direction: column; /* stack logo and buttons */
+  align-items: center;
+  padding: 20px;
+  background: black;
+  border-bottom: 2px solid gold;
+}
+
+.logo-home-quarter {
+  max-height: 25vh; /* logo covers ~quarter of page */
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.nav-buttons-home {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* HERO SECTION */
+.hero-home {
+  text-align: center;
+  padding: 50px 20px;
+  background: black;
+  color: gold;
+}
+
+.hero-home h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-home p {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.hero-home .btn {
+  background: gold;
+  color: black;
+  padding: 12px 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-home .btn:hover {
+  background: white;
+  color: black;
+}
+/* HEADER HOMEPAGE */
+.header-container-home {
+  display: flex;
+  flex-direction: column; /* stack logo and buttons */
+  align-items: center;
+  padding: 20px;
+  background: black;
+  border-bottom: 2px solid gold;
+}
+
+.logo-home-quarter {
+  max-height: 25vh; /* logo covers about 1/4 of screen height */
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.nav-buttons-home {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-btn {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* HERO SECTION */
+.hero-home {
+  text-align: center;
+  padding: 50px 20px;
+  background: black;
+  color: gold;
+}
+
+.hero-home h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-home p {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.hero-home .btn {
+  background: gold;
+  color: black;
+  padding: 12px 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-home .btn:hover {
+  background: white;
+  color: black;
+}
+
+/* CONTACT SECTION ON HOME PAGE */
+.contact-home {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111;
+  color: gold;
+}
+
+.contact-home h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-home p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+/* HOMEPAGE LOGO */
+.logo-home-quarter {
+  max-height: 40vh; /* increase logo height to cover more of the top */
+  width: auto;
+  margin-bottom: 20px;
+}
+
+/* HOMEPAGE HEADER: LOGO + BUTTONS CENTERED */
+.header-container-home {
+  display: flex;
+  flex-direction: column; /* stack logo and buttons vertically */
+  justify-content: center; /* center vertically in header space */
+  align-items: center;    /* center horizontally */
+  height: 40vh;           /* top 40% of viewport height */
+  background: black;
+  border-bottom: 2px solid gold;
+  padding: 20px;
+}
+
+.logo-home-quarter {
+  max-height: 30vh; /* logo covers top quarter of page */
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.nav-buttons-home {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-btn {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* TOP OF HOMEPAGE: LOGO + BUTTONS CENTERED MIDDLE */
+.header-top-home {
+  display: flex;
+  flex-direction: column;      /* stack logo and buttons vertically */
+  align-items: center;         /* center horizontally */
+  justify-content: center;     /* center vertically */
+  height: 40vh;                /* top 40% of the viewport */
+  background: black;
+  border-bottom: 2px solid gold;
+  padding: 0 20px;             /* prevent sticking to left/right edges */
+  box-sizing: border-box;
+}
+
+.logo-home-top {
+  max-height: 25vh;            /* logo covers a quarter of the page */
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.nav-buttons-home {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;     /* keep buttons centered horizontally */
+}
+
+.nav-btn {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: black;
+}
+.mission-vision {
+  padding: 60px 20px;
+  text-align: center;
+  background: #1a1a1a;
+}
+
+.mission-vision h2 {
+  color: gold;
+  margin-top: 20px;
+}
+
+<style>
+  /* General section styling */
+  #cleaning-services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  #cleaning-services h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1a73e8; /* nice corporate blue */
+  }
+
+  #cleaning-services p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* Service block styling */
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .service img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .service img {
+      max-width: 100%;
+    }
+  }
+</style>
+
