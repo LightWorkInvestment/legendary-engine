@@ -16,7 +16,7 @@ header {
 }
 
 header nav a {
-  color: gold;
+  color: white;
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
@@ -33,7 +33,7 @@ header nav a:hover {
 /* HERO */
 .hero {
   background: black;
-  color: gold;
+  color: white;
   text-align: center;
   padding: 80px 20px;
 }
@@ -116,11 +116,11 @@ header nav a:hover {
   max-width: 600px;
   width: 100%;
   text-align: center;
-  border: 2px solid gold;
+  border: 2px solid gray;
 }
 
 .contact-container h2 {
-  color: gold;
+  color: gray;
   margin-bottom: 15px;
 }
 
@@ -129,7 +129,7 @@ header nav a:hover {
 }
 
 .contact-container .form-logo {
-  height: 80px;
+  height: 40px;
   margin-bottom: 20px;
 }
 
@@ -145,7 +145,7 @@ header nav a:hover {
 .contact-container textarea {
   width: 100%;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   margin-top: 5px;
   background: #222;
@@ -154,7 +154,7 @@ header nav a:hover {
 
 .contact-container button {
   padding: 12px 25px;
-  background: gold;
+  background: gray;
   color: black;
   font-weight: bold;
   border: none;
