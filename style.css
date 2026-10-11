@@ -1,726 +1,499 @@
+
+/* ==================================
+   GLOBAL SETTINGS
+================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: #eee;
-  line-height: 1.6;
-}
-
-header {
-  background: black;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-header nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-header nav a:hover {
-  color: white;
-}
-
-.logo {
-  height: 60px;
-}
-
-/* HERO */
-.hero {
-  background: black;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: gold;
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background: white;
-}
-
-/* WHY CHOOSE US */
-.why-choose {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.why-choose ul {
-  list-style: none;
-  padding: 0;
-}
-
-.why-choose li {
-  margin: 10px 0;
-}
-
-/* SERVICES PREVIEW */
-.services-preview {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.services {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #222;
-  padding: 20px;
-  width: 250px;
-  border-radius: 8px;
-}
-
-.card a {
-  color: gold;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.cta {
-  background: gold;
-  color: black;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-/* CONTACT FORM UPGRADE */
-.contact-section {
-  padding: 60px 20px;
-  background: #111;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-container {
-  background: #1a1a1a;
-  padding: 40px;
-  border-radius: 15px;
-  max-width: 600px;
-  width: 100%;
-  text-align: center;
-  border: 2px solid gray;
-}
-
-.contact-container h2 {
-  color: gray;
-  margin-bottom: 15px;
-}
-
-.contact-container p {
-  margin-bottom: 25px;
-}
-
-.contact-container .form-logo {
-  height: 40px;
-  margin-bottom: 20px;
-}
-
-.contact-container label {
-  display: block;
-  text-align: left;
-  margin-bottom: 15px;
-  color: #eee;
-}
-
-.contact-container input,
-.contact-container select,
-.contact-container textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 3px;
-  border: none;
-  margin-top: 5px;
-  background: #222;
-  color: #eee;
-}
-
-.contact-container button {
-  padding: 12px 25px;
-  background: gray;
-  color: black;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.contact-container button:hover {
-  background: white;
-  color: black;
-}
-
-footer {
-  background: black;
-  color: gold;
-  text-align: center;
-  padding: 20px;
-}
-/* Logos */
-.logo-home {
-  height: 120px;  /* Bigger logo for homepage */
-}
-
-.logo-small {
-  height: 60px;   /* Smaller logo for other pages */
-}
-
-.header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-header h1 {
-  font-size: 26px;
-  color: gold;
-}
-
-/* Hero section for homepage with full logo */
-.hero-home {
-  background: black;
-  color: gold;
-  height: 90vh; /* almost full screen */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-  padding: 0 20px;
-}
-
-.hero-logo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.logo-home-full {
-  max-width: 400px; /* adjust size */
-  width: 80%;
-  height: auto;
-}
-
-.hero-home h1 {
-  font-size: 42px;
-  font-weight: bold;
-}
-
-.hero-home p {
-  font-size: 20px;
-  max-width: 800px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: gold;
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background: white;
-  color: black;
-}
-/* Hero section for homepage with logo covering ~1/4 of the page */
-.hero-home {
-  background: black;
-  color: gold;
-  height: 50vh; /* about half of the visible page */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 15px;
-  padding: 0 20px;
-}
-
-.hero-logo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.logo-home-quarter {
-  max-height: 25vh; /* logo height covers ~1/4 of page */
-  width: auto;
-}
-
-.hero-home h1 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.hero-home p {
-  font-size: 18px;
-  max-width: 700px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background: gold;
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background: white;
-  color: black;
-}
-.hero-home {
-  background: black;
-  color: gold;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 15px;
-  padding: 0 20px;
-}
-
-.hero-logo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.logo-home-quarter {
-  max-height: 25vh;
-  width: auto;
-}
-
-.hero-home h1 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-.hero-home p {
-  font-size: 18px;
-  max-width: 700px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background: gold;
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background: white;
-  color: black;
-}
-.hero-home {
-  background: black;
-  color: gold;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-  padding: 0 20px;
-}
-
-.hero-logo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.logo-home-quarter {
-  max-height: 25vh; /* roughly a quarter of the page */
-  width: auto;
-}
-
-.hero-home h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.hero-home p {
-  font-size: 16px;
-  max-width: 700px;
-  line-height: 1.6;
-}
-
-.btn {
-  background: gold;
-  color: black;
-  border: none;
-  padding: 12px 25px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: white;
-  color: black;
-}
-/* HEADER HOMEPAGE */
-.header-container-home {
-  display: flex;
-  flex-direction: column; /* stack logo and buttons */
-  align-items: center;
-  padding: 20px;
-  background: black;
-  border-bottom: 2px solid gold;
-}
-
-.logo-home-quarter {
-  max-height: 25vh; /* logo covers ~quarter of page */
-  width: auto;
-  margin-bottom: 20px;
-}
-
-.nav-buttons-home {
-  display: flex;
-  gap: 10px;
-}
-
-.nav-btn {
-  background: gold;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.nav-btn:hover {
-  background: white;
-  color: black;
-}
-
-/* HERO SECTION */
-.hero-home {
-  text-align: center;
-  padding: 50px 20px;
-  background: black;
-  color: gold;
-}
-
-.hero-home h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.hero-home p {
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 30px;
-  font-size: 18px;
-}
-
-.hero-home .btn {
-  background: gold;
-  color: black;
-  padding: 12px 25px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.hero-home .btn:hover {
-  background: white;
-  color: black;
-}
-/* HEADER HOMEPAGE */
-.header-container-home {
-  display: flex;
-  flex-direction: column; /* stack logo and buttons */
-  align-items: center;
-  padding: 20px;
-  background: black;
-  border-bottom: 2px solid gold;
-}
-
-.logo-home-quarter {
-  max-height: 25vh; /* logo covers about 1/4 of screen height */
-  width: auto;
-  margin-bottom: 20px;
-}
-
-.nav-buttons-home {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.nav-btn {
-  background: gold;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.nav-btn:hover {
-  background: white;
-  color: black;
-}
-
-/* HERO SECTION */
-.hero-home {
-  text-align: center;
-  padding: 50px 20px;
-  background: black;
-  color: gold;
-}
-
-.hero-home h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 0;
 
-.hero-home p {
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 30px;
-  font-size: 18px;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 
-.hero-home .btn {
-  background: gold;
-  color: black;
-  padding: 12px 25px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
+    color: #222;
+    background: #fff;
 }
 
-.hero-home .btn:hover {
-  background: white;
-  color: black;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-/* CONTACT SECTION ON HOME PAGE */
-.contact-home {
-  text-align: center;
-  padding: 40px 20px;
-  background: #111;
-  color: gold;
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
 }
 
-.contact-home h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+h1,
+h2,
+h3 {
+    line-height: 1.25;
 }
 
-.contact-home p {
-  font-size: 16px;
-  margin: 5px 0;
-}
-/* HOMEPAGE LOGO */
-.logo-home-quarter {
-  max-height: 40vh; /* increase logo height to cover more of the top */
-  width: auto;
-  margin-bottom: 20px;
+a {
+    overflow-wrap: anywhere;
 }
 
-/* HOMEPAGE HEADER: LOGO + BUTTONS CENTERED */
-.header-container-home {
-  display: flex;
-  flex-direction: column; /* stack logo and buttons vertically */
-  justify-content: center; /* center vertically in header space */
-  align-items: center;    /* center horizontally */
-  height: 40vh;           /* top 40% of viewport height */
-  background: black;
-  border-bottom: 2px solid gold;
-  padding: 20px;
-}
 
-.logo-home-quarter {
-  max-height: 30vh; /* logo covers top quarter of page */
-  width: auto;
-  margin-bottom: 20px;
-}
+/* ==================================
+   HEADER AND LOGO
+================================== */
 
-.nav-buttons-home {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
+.site-header {
+    width: 100%;
+    padding: 16px 24px;
+    background: #111;
 }
 
-.nav-btn {
-  background: gold;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+.header-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 
-.nav-btn:hover {
-  background: white;
-  color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-/* TOP OF HOMEPAGE: LOGO + BUTTONS CENTERED MIDDLE */
-.header-top-home {
-  display: flex;
-  flex-direction: column;      /* stack logo and buttons vertically */
-  align-items: center;         /* center horizontally */
-  justify-content: center;     /* center vertically */
-  height: 40vh;                /* top 40% of the viewport */
-  background: black;
-  border-bottom: 2px solid gold;
-  padding: 0 20px;             /* prevent sticking to left/right edges */
-  box-sizing: border-box;
+.logo-link {
+    display: block;
+    flex: 0 1 150px;
+    min-width: 0;
 }
 
 .logo-home-top {
-  max-height: 25vh;            /* logo covers a quarter of the page */
-  width: auto;
-  margin-bottom: 20px;
+    width: 100%;
+    max-width: 150px;
+    max-height: 90px;
+    object-fit: contain;
 }
 
+
+/* ==================================
+   NAVIGATION
+================================== */
+
 .nav-buttons-home {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;     /* keep buttons centered horizontally */
+    flex: 1 1 550px;
+    min-width: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
 }
 
 .nav-btn {
-  background: gold;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+    padding: 10px 16px;
+
+    border: 1px solid #d6ad28;
+    border-radius: 8px;
+
+    background: #1c1c1c;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .nav-btn:hover {
-  background: white;
-  color: black;
-}
-.mission-vision {
-  padding: 60px 20px;
-  text-align: center;
-  background: #1a1a1a;
+    background: #d6ad28;
+    color: #111;
 }
 
-.mission-vision h2 {
-  color: gold;
-  margin-top: 20px;
-}
 
-<style>
-  /* General section styling */
-  #cleaning-services {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
+/* ==================================
+   HERO SECTION
+================================== */
 
-  #cleaning-services h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #1a73e8; /* nice corporate blue */
-  }
-
-  #cleaning-services p {
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-
-  /* Service block styling */
-  .service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .service:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-
-  .service h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
-  }
-
-  .service img {
-    max-width: 300px;
+.hero-home {
     width: 100%;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 8px;
-  }
+    padding: clamp(45px, 8vw, 90px) 20px;
 
-  /* Responsive for smaller screens */
-  @media (max-width: 768px) {
-    .service img {
-      max-width: 100%;
+    text-align: center;
+    color: #fff;
+
+    background: linear-gradient(
+        135deg,
+        #111 0%,
+        #29230f 60%,
+        #6b5310 100%
+    );
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.hero-home h1 {
+    margin-bottom: 24px;
+    font-size: clamp(30px, 5vw, 56px);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+}
+
+.hero-home p {
+    max-width: 850px;
+    margin: 0 auto 28px;
+    font-size: clamp(16px, 1.8vw, 19px);
+    line-height: 1.8;
+}
+
+
+/* ==================================
+   REQUEST A QUOTE BUTTON
+================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+    max-width: 100%;
+    padding: 12px 24px;
+
+    border: 2px solid #d6ad28;
+    border-radius: 9px;
+
+    background: #d6ad28;
+    color: #111;
+
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #fff;
+}
+
+
+/* ==================================
+   MISSION AND VISION
+================================== */
+
+.mission-vision {
+    width: calc(100% - 40px);
+    max-width: 1100px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.info-card {
+    min-width: 0;
+    padding: 30px;
+
+    border: 1px solid #e2d4a5;
+    border-radius: 14px;
+
+    background: #faf8f0;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.info-card h2 {
+    margin-bottom: 16px;
+    color: #8a6810;
+    font-size: clamp(24px, 3vw, 30px);
+}
+
+.info-card p {
+    margin-bottom: 0;
+    overflow-wrap: break-word;
+}
+
+
+/* ==================================
+   CONTACT SECTION
+================================== */
+
+.contact-section {
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px 0 50px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 12px;
+    font-size: clamp(25px, 4vw, 36px);
+    overflow-wrap: anywhere;
+}
+
+.contact-section > p {
+    margin-bottom: 24px;
+    color: #555;
+}
+
+
+/* ==================================
+   CONTACT PANEL
+   Normal page layout, NOT fixed
+================================== */
+
+.contact-panel {
+    position: static;
+
+    width: 100%;
+    max-width: 430px;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 24px;
+
+    border-radius: 18px;
+    background: linear-gradient(135deg, #111, #6b5310);
+    color: #fff;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-panel h3 {
+    margin-bottom: 18px;
+    color: #fff;
+    font-size: 23px;
+}
+
+
+/* WhatsApp links */
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    margin-bottom: 12px;
+    padding: 12px;
+
+    border-radius: 10px;
+    background: #25d366;
+    color: #fff;
+
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.whatsapp-link:hover {
+    background: #1eae54;
+}
+
+
+/* Clickable telephone links */
+
+.phone-link {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 9px 8px;
+    margin-bottom: 5px;
+
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.phone-link:last-child {
+    margin-bottom: 0;
+}
+
+.phone-link:hover {
+    color: #e2bf4a;
+}
+
+
+/* ==================================
+   FOOTER
+================================== */
+
+.site-footer {
+    width: 100%;
+    padding: 22px 16px;
+
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+
+/* ==================================
+   TABLETS AND SMALL LAPTOPS
+================================== */
+
+@media (max-width: 760px) {
+
+    .header-inner {
+        flex-direction: column;
+        justify-content: center;
+        gap: 18px;
     }
-  }
-</style>
+
+    .logo-link {
+        flex: 0 1 auto;
+        width: 140px;
+        max-width: 100%;
+    }
+
+    .logo-home-top {
+        max-width: 140px;
+        max-height: 80px;
+        margin: 0 auto;
+    }
+
+    .nav-buttons-home {
+        flex: 0 1 auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-btn {
+        flex: 1 1 120px;
+    }
+}
+
+
+/* ==================================
+   MOBILE PHONES
+================================== */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 15px 12px;
+    }
+
+    .nav-buttons-home {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: 8px;
+    }
+
+    .nav-btn {
+        width: 100%;
+        min-width: 0;
+        min-height: 44px;
+        padding: 10px 5px;
+
+        font-size: 14px;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-home {
+        padding: 45px 18px;
+    }
+
+    .hero-home h1 {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .hero-home p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .mission-vision {
+        width: calc(100% - 32px);
+        margin: 25px auto;
+
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .info-card {
+        padding: 23px 20px;
+    }
+
+    .contact-section {
+        width: calc(100% - 32px);
+        padding: 20px 0 40px;
+    }
+
+    .contact-panel {
+        padding: 20px 16px;
+    }
+
+    .site-footer {
+        padding: 20px 14px;
+    }
+}
+
+
+/* ==================================
+   VERY SMALL PHONES
+================================== */
+
+@media (max-width: 360px) {
+
+    .hero-home h1 {
+        font-size: 27px;
+    }
+
+    .nav-btn {
+        padding: 9px 4px;
+        font-size: 13px;
+    }
+
+    .contact-panel {
+        padding: 18px 12px;
+    }
+
+    .whatsapp-link {
+        padding: 11px 8px;
+        font-size: 14px;
+    }
+}
+
 
