@@ -57,7 +57,7 @@ a {
 
 .site-header {
     width: 100%;
-    padding: 16px 24px;
+    padding: 24px 32px;
     background: #111;
 }
 
@@ -81,8 +81,8 @@ a {
 
 .logo-home-top {
     width: 100%;
-    max-width: 150px;
-    max-height: 90px;
+    max-width: 450px;
+    max-height: 150px;
     object-fit: contain;
 }
 
@@ -281,7 +281,7 @@ a {
 
     border-radius: 18px;
     background: linear-gradient(135deg, #111, #6b5310);
-    color: #fff;
+    color: #8a6810;
 
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -309,7 +309,7 @@ a {
 
     border-radius: 10px;
     background: #25d366;
-    color: #fff;
+    color: #8a6810;
 
     font-weight: bold;
     text-align: center;
@@ -331,7 +331,7 @@ a {
     padding: 9px 8px;
     margin-bottom: 5px;
 
-    color: #fff;
+    color: #8a6810;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
